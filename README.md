@@ -22,7 +22,7 @@ Este es un frontend modular en React con TypeScript que consume una API con info
 
 ## Estructura del proyecto
 
-\`\`\`
+```
 src/
 ├── components/     # Componentes reutilizables
 ├── context/        # Contextos de React
@@ -31,7 +31,7 @@ src/
 ├── styles/         # Estilos CSS
 ├── types/          # Definiciones de tipos TypeScript
 └── App.tsx         # Componente principal
-\`\`\`
+```
 
 ## Instalación y ejecución
 
