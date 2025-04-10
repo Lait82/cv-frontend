@@ -1,0 +1,16 @@
+.api-docs-page {
+    padding: 2rem 0;
+  }
+  
+  .api-docs-intro {
+    margin-bottom: 2rem;
+    color: var(--ash-gray);
+    max-width: 800px;
+  }
+  
+  .api-endpoints {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  

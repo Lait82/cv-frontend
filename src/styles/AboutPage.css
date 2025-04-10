@@ -1,0 +1,136 @@
+.about-page {
+  padding: 2rem 0;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.pixel-portrait.large {
+  width: 250px;
+  height: 250px;
+  background-image: url("../assets/pixel-avatar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.about-info {
+  background-color: var(--soft-coal);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-left: 3px solid var(--cyber-teal);
+}
+
+.about-header {
+  margin-bottom: 1.5rem;
+}
+
+.about-header h2 {
+  font-size: 2rem;
+  color: var(--cyber-teal);
+  margin-bottom: 0.5rem;
+}
+
+.about-header .title {
+  font-size: 1.2rem;
+  color: var(--warm-ember);
+  font-family: var(--font-secondary);
+}
+
+.about-summary {
+  margin-bottom: 2rem;
+  color: var(--ash-gray);
+  line-height: 1.6;
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 0.9rem;
+  color: var(--ash-gray);
+  margin-bottom: 0.3rem;
+}
+
+.detail-value {
+  color: var(--cyber-teal);
+  font-family: var(--font-secondary);
+}
+
+.detail-value a {
+  color: var(--cyber-teal);
+  transition: color 0.3s ease;
+}
+
+.detail-value a:hover {
+  color: var(--warm-ember);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 191, 166, 0.1);
+  color: var(--cyber-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--cyber-teal);
+  color: var(--neo-black);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .pixel-portrait.large {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .about-info {
+    padding: 1.5rem;
+  }
+
+  .about-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+  }
+}

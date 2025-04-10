@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--matrix-fog);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

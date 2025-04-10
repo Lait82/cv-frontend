@@ -1,0 +1,107 @@
+.contact-page {
+  padding: 2rem 0;
+}
+
+.contact-intro {
+  margin: 2rem 0;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--ash-gray);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-card {
+  background-color: var(--soft-coal);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  border-left: 3px solid var(--cyber-teal);
+}
+
+.contact-card h3 {
+  font-size: 1.5rem;
+  color: var(--cyber-teal);
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  color: var(--ash-gray);
+  margin-bottom: 2rem;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.method-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 191, 166, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyber-teal);
+  font-size: 1.2rem;
+}
+
+.method-details h4 {
+  font-size: 1.1rem;
+  color: var(--cyber-teal);
+  margin-bottom: 0.3rem;
+}
+
+.method-details p {
+  color: var(--ash-gray);
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-links a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 191, 166, 0.1);
+  color: var(--cyber-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--cyber-teal);
+  color: var(--neo-black);
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    margin-bottom: 2rem;
+  }
+}

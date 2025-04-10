@@ -1,0 +1,32 @@
+.interests-page {
+  padding: 2rem 0;
+}
+
+.interests-intro {
+  margin: 2rem 0;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--ash-gray);
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.no-interests {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--soft-coal);
+  border-radius: 8px;
+  color: var(--ash-gray);
+}
+
+@media (max-width: 768px) {
+  .interests-intro {
+    margin: 1.5rem 0;
+  }
+}

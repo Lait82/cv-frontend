@@ -1,0 +1,145 @@
+.api-endpoint-doc {
+  background-color: var(--soft-coal);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-left: 3px solid var(--cyber-teal);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.endpoint-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.endpoint-method {
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: monospace;
+  margin-right: 1rem;
+  min-width: 60px;
+  text-align: center;
+}
+
+.method-post {
+  /* background-color: rgba(0, 191, 166, 0.2); */
+  background-color: #1d4a777a;
+  color: #94caffdd;
+}
+
+.method-get {
+  background-color: rgba(255, 214, 165, 0.2);
+  color: var(--firelight-glow);
+}
+
+.method-put {
+  background-color: rgba(159, 163, 167, 0.2);
+  color: var(--ash-gray);
+}
+
+.method-delete {
+  background-color: rgba(255, 94, 58, 0.2);
+  color: var(--warm-ember);
+}
+
+.endpoint-path {
+  font-family: monospace;
+  font-size: 1.1rem;
+  color: var(--cyber-teal);
+}
+
+.endpoint-description {
+  color: var(--ash-gray);
+  margin-bottom: 1.5rem;
+}
+
+.endpoint-section {
+  margin-bottom: 1.5rem;
+}
+
+.endpoint-section h4 {
+  color: var(--cyber-teal);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.endpoint-section h4::before {
+  content: ">";
+  margin-right: 0.5rem;
+  color: var(--cyber-teal);
+}
+
+.code-block {
+  background-color: var(--neo-black);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  color: var(--ash-gray);
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.response-block {
+  border-left: 3px solid var(--success);
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.9;
+  overflow-y: scroll;
+  scrollbar-color: var(--cyber-teal) var(--soft-coal);
+}
+
+.endpoint-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.try-button {
+  background-color: var(--cyber-teal);
+  color: var(--neo-black);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.try-button:hover {
+  background-color: var(--success);
+}
+
+.try-button:disabled {
+  background-color: var(--ash-gray);
+  cursor: not-allowed;
+}
+
+.toggle-response {
+  background-color: transparent;
+  color: var(--cyber-teal);
+  border: 1px solid var(--cyber-teal);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-response:hover {
+  background-color: rgba(255, 94, 58, 0.1);
+  border: 1px solid var(--warm-ember);
+  color: var(--warm-ember)
+}
+
+.endpoint-error {
+  color: var(--warm-ember);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 94, 58, 0.1);
+  border-radius: 4px;
+}

@@ -1,0 +1,58 @@
+.projects-page h1 {
+  margin-bottom: 2rem;
+  color: var(--cyber-teal);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: var(--soft-coal);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--cyber-teal);
+}
+
+.project-card h2 {
+  color: var(--cyber-teal);
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  color: var(--ash-gray);
+  margin-bottom: 1rem;
+}
+
+.technologies,
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  background-color: rgba(0, 191, 166, 0.1);
+  color: var(--cyber-teal);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.interest-tag {
+  background-color: rgba(255, 94, 58, 0.1);
+  color: var(--warm-ember);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

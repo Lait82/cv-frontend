@@ -1,0 +1,53 @@
+.endpoint-page {
+    padding: 2rem 0;
+  }
+  
+  .endpoint-page-title {
+    margin-bottom: 2rem;
+    color: var(--cyber-teal);
+    text-align: center;
+  }
+  
+  .endpoint-page-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .endpoint-data {
+    position: sticky;
+    top: 2rem;
+  }
+  
+  .endpoint-visualization {
+    background-color: var(--soft-coal);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .visualization-title {
+    color: var(--cyber-teal);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .visualization-title::before {
+    content: "//";
+    margin-right: 0.5rem;
+    color: var(--warm-ember);
+  }
+  
+  @media (max-width: 1024px) {
+    .endpoint-page-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .endpoint-data {
+      position: static;
+    }
+  }
+  

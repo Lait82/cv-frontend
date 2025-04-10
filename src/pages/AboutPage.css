@@ -1,0 +1,42 @@
+.about-page h1 {
+  margin-bottom: 2rem;
+  color: var(--cyber-teal);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 2px solid var(--cyber-teal);
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: var(--ash-gray);
+}
+
+.contact-info {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--soft-coal);
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+}
