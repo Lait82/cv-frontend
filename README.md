@@ -39,28 +39,28 @@ src/
 
 1. Clona el repositorio
 2. Instala las dependencias:
-   \`\`\`
+   ```
    npm install
-   \`\`\`
+   ```
 3. Crea un archivo `.env` con la URL de la API:
-   \`\`\`
+   ```
    REACT_APP_API_URL=http://localhost:3001
-   \`\`\`
+   ```
 4. Inicia el servidor de desarrollo:
-   \`\`\`
+   ```
    npm start
-   \`\`\`
+   ```
 
 ### Usando Docker
 
 1. Construye la imagen:
-   \`\`\`
+   ```
    docker build -t cv-frontend .
-   \`\`\`
+   ```
 2. Ejecuta el contenedor:
-   \`\`\`
+   ```
    docker run -p 80:80 cv-frontend
-   \`\`\`
+   ```
 
 ## Endpoints de la API
 
