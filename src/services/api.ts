@@ -1,6 +1,6 @@
 import type { BasicInfo, Interest, Project, ContactForm, InterestType } from "../types"
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000"
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:80"
 
 
 export const fetchBasicInfo = async (): Promise<BasicInfo> => {

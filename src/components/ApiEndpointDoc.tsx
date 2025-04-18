@@ -28,7 +28,7 @@ const ApiEndpointDoc: React.FC<ApiEndpointDocProps> = ({
     setError(null)
 
     try {
-      const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3001"
+      const API_URL = process.env.REACT_APP_API_URL || "http://localhost:80"
       const url = `${API_URL}${endpoint}`
 
       const options: RequestInit = {
