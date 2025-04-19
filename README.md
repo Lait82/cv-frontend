@@ -69,3 +69,4 @@ src/
 ## Personalización
 
 Puedes personalizar la paleta de colores editando las variables CSS en `src/styles/App.css`.
+
