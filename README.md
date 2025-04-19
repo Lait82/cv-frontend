@@ -56,7 +56,7 @@ src/
    ```
 2. Ejecuta el contenedor:
    ```
-   docker run -p 80:80 cv-frontend
+   docker run -p 80:80 cv-frontend.
    ```
 
 ## Endpoints de la API
