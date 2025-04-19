@@ -19,6 +19,7 @@ Este es un frontend modular en React con TypeScript que consume una API con info
 - React Router v6
 - CSS Modules
 - Docker
+- Github Actions
 
 ## Estructura del proyecto
 
