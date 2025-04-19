@@ -42,11 +42,7 @@ src/
    ```
    npm install
    ```
-3. Crea un archivo `.env` con la URL de la API:
-   ```
-   REACT_APP_API_URL=http://localhost:3001
-   ```
-4. Inicia el servidor de desarrollo:
+3. Inicia el servidor de desarrollo:
    ```
    npm start
    ```

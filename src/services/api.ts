@@ -1,11 +1,12 @@
 import type { BasicInfo, Interest, Project, ContactForm, InterestType } from "../types"
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:80"
+// const API_URL = process.env.REACT_APP_API_URL || ""
 
 
 export const fetchBasicInfo = async (): Promise<BasicInfo> => {
   try {
-    const response = await fetch(`${API_URL}/api/basic_info`)
+    // const response = await fetch(`${API_URL}/api/basic_info`)
+    const response = await fetch(`/api/basic_info`)
     if (!response.ok) {
       throw new Error("Failed to fetch basic info")
     }
@@ -18,7 +19,7 @@ export const fetchBasicInfo = async (): Promise<BasicInfo> => {
 
 export const fetchInterests = async (): Promise<Interest[]> => {
   try {
-    const response = await fetch(`${API_URL}/api/interests`)
+    const response = await fetch(`/api/interests`)
     if (!response.ok) {
       throw new Error("Failed to fetch interests")
     }
@@ -31,7 +32,7 @@ export const fetchInterests = async (): Promise<Interest[]> => {
 
 export const fetchProjects = async (interestFilter?: InterestType): Promise<Project[]> => {
   try {
-    const url = interestFilter ? `${API_URL}/api/projects?interests=${interestFilter}` : `${API_URL}/api/projects`
+    const url = interestFilter ? `/api/projects?interests=${interestFilter}` : `/api/projects`
 
     const response = await fetch(url)
     if (!response.ok) {
@@ -46,7 +47,7 @@ export const fetchProjects = async (interestFilter?: InterestType): Promise<Proj
 
 export const submitContactForm = async (formData: ContactForm): Promise<{ success: boolean; message: string }> => {
   try {
-    const response = await fetch(`${API_URL}/api/contact`, {
+    const response = await fetch(`/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
