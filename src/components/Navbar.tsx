@@ -3,11 +3,11 @@
 import type React from "react"
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { useTheme } from "../context/ThemeContext"
+// import { useTheme } from "../context/ThemeContext"
 import "../styles/Navbar.css"
 
 const Navbar: React.FC = () => {
-  const { theme, toggleTheme } = useTheme()
+  // const { theme, toggleTheme } = useTheme()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
 
