@@ -75,7 +75,7 @@ const AboutPage: React.FC = () => {
                   <h2>
                     {basicInfo.firstname} {basicInfo.lastname}
                   </h2>
-                  <p className="title">{"Backend Engineer"}</p>
+                  <i className="fa-solid fa"></i><p className="title">{"Backend Engineer"}</p>
                   {/* <p className="title">{basicInfo.title}</p> */}
                 </div>
 
@@ -86,13 +86,19 @@ const AboutPage: React.FC = () => {
                 <div className="about-details">
                   <div className="detail-item">
                     <span className="detail-label">Location:</span>
-                    <span className="detail-value">{basicInfo.location}</span>
+                    <span className="detail-value">
+                      <i className="fas fa-map-marker-alt" styles={{marginRight:15}}></i>
+                      {basicInfo.location}
+                    </span>
                   </div>
 
                   <div className="detail-item">
                     <span className="detail-label">Email:</span>
                     <span className="detail-value">
-                      <a href={`mailto:${basicInfo.email}`}>{basicInfo.email}</a>
+                      <a href={`mailto:${basicInfo.email}`}>
+                        <i className="fas fa-envelope" styles={{marginRight:15}}></i>
+                        {basicInfo.email}
+                      </a>
                     </span>
                   </div>
                 </div>
