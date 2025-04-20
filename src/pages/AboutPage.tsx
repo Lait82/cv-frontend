@@ -87,7 +87,7 @@ const AboutPage: React.FC = () => {
                   <div className="detail-item">
                     <span className="detail-label">Location:</span>
                     <span className="detail-value">
-                      <i className="fas fa-map-marker-alt" styles={{marginRight:15}}></i>
+                      <i className="fas fa-map-marker-alt" style={{marginRight:15}}></i>
                       {basicInfo.location}
                     </span>
                   </div>
@@ -96,7 +96,7 @@ const AboutPage: React.FC = () => {
                     <span className="detail-label">Email:</span>
                     <span className="detail-value">
                       <a href={`mailto:${basicInfo.email}`}>
-                        <i className="fas fa-envelope" styles={{marginRight:15}}></i>
+                        <i className="fas fa-envelope" style={{marginRight:15}}></i>
                         {basicInfo.email}
                       </a>
                     </span>
