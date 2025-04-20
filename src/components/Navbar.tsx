@@ -66,11 +66,11 @@ const Navbar: React.FC = () => {
               API Docs
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <button className="theme-toggle" onClick={toggleTheme}>
               {theme === "dark" ? "☀️" : "🌙"}
             </button>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
