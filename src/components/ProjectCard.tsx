@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
       )} */}
       <div className="project-image">
-        <img src={"/placeholder.svg"} alt={project.name} />
+        <img src={project.banner_img ? `/media/${project.banner_img}` : "/placeholder.svg"} alt={project.name} />
       </div>
 
       <div className="project-content">

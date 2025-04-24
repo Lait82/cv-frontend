@@ -18,6 +18,7 @@ const ApiDocsPage: React.FC = () => {
   const interestsExample = [
     {
       "id": "number",
+      "img_logo": "string",
       "level_or_degree": "string",
       "name": "string",
       "notes": "string",
@@ -25,6 +26,7 @@ const ApiDocsPage: React.FC = () => {
     },
     {
       "id": "number",
+      "img_logo": "string",
       "level_or_degree":"string",
       "name":"string",
       "notes":"string",
@@ -34,12 +36,14 @@ const ApiDocsPage: React.FC = () => {
 
   const projectsExample = [
     {
+      banner_img: "string",
       description: "string",
       github_url: "string",
       id: "number",
       name: "string",
     },
     {
+      banner_img: "string",
       description: "string",
       github_url: "string",
       id: "number",

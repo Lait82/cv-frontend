@@ -35,7 +35,7 @@
 
 .filter-option:hover {
   border-color: var(--cyber-teal);
-  color: var(--cyber-teal);
+  color: var(--neo-black);
 }
 
 .filter-option.active {

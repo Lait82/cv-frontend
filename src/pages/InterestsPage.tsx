@@ -34,6 +34,7 @@ const InterestsPage: React.FC = () => {
   const interestsExample = [
     {
       "id": "number",
+      "img_logo": "string",
       "level_or_degree": "string",
       "name": "string",
       "notes": "string",
@@ -41,6 +42,7 @@ const InterestsPage: React.FC = () => {
     },
     {
       "id": "number",
+      "img_logo": "string",
       "level_or_degree":"string",
       "name":"string",
       "notes":"string",

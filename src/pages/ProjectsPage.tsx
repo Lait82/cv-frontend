@@ -52,12 +52,14 @@ const ProjectsPage: React.FC = () => {
   // Ejemplo de respuesta para el endpoint
   const projectsExample = [
     {
+      banner_img: "string",
       description: "string",
       github_url: "string",
       id: "number",
       name: "string",
     },
     {
+      banner_img: "string",
       description: "string",
       github_url: "string",
       id: "number",

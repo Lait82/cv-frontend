@@ -24,7 +24,8 @@ export interface Interest {
   notes: string
   level_or_degree: string
   years_of_practice: number
-  icon?: string
+  img_logo?: string|null
+
 }
 
 export interface Project {
@@ -32,6 +33,7 @@ export interface Project {
   name: string
   description: string
   github_url?: string
+  banner_img: string|null
 }
 
 export interface ContactForm {

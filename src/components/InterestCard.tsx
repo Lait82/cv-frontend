@@ -17,11 +17,13 @@ const InterestCard: React.FC<InterestCardProps> = ({ interest }) => {
   return (
     <div className="interest-card">
       <div className="interest-header">
-        {interest.icon ? (
-          <div className="interest-icon">
-            <i className={interest.icon}></i>
+        {interest.img_logo ? (
+          <div className="interest-icon" style={{
+            backgroundImage:`url(/media/${interest.img_logo})`
+            }}>
+              
           </div>
-        ) : (
+        ) : ( 
           <div className="interest-icon-placeholder">{interest.name.charAt(0)}</div>
         )}
         <h3 className="interest-name">{interest.name}</h3>
